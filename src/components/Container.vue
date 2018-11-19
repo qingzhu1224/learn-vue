@@ -5,6 +5,12 @@
     <Hello title="42"/>
     <MySlot>
     </MySlot>
+    <TodoList>
+      <template slot-scope="{ todo }">
+        <span v-if="todo.isComplete">✓</span>
+        {{ todo.text }}
+      </template>
+    </TodoList>
   </div>
 </template>
 
@@ -12,12 +18,14 @@
 import MyButton from "./MyButton";
 import Hello from './Hello';
 import MySlot from './Slot';
+import TodoList from './TodoList';
 export default {
   name: 'Container',
   components: {
     MyButton,
     Hello,
     MySlot,
+    TodoList,
   },
   data () {
     return {
