@@ -1,20 +1,13 @@
 <template>
   <div class="hello">
-    <MyButton />
-    <BaseButton />
-    <Hello />
+    我是hello
+    <BaseInput/>
   </div>
 </template>
 
 <script>
-import MyButton from "./MyButton";
-import Hello from './Hello';
 export default {
-  name: 'HelloWorld',
-  components: {
-    MyButton,
-    Hello,
-  },
+  name: 'Hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

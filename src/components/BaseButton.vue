@@ -1,23 +1,16 @@
 <template>
-  <div class="hello">
-    <MyButton />
-    <BaseButton />
-    <Hello />
-  </div>
+    <div>
+        <label>我是来自全局注册的组件</label>
+        <button @click="counter++">click me {{counter}} times</button>
+    </div>
 </template>
 
 <script>
-import MyButton from "./MyButton";
-import Hello from './Hello';
 export default {
-  name: 'HelloWorld',
-  components: {
-    MyButton,
-    Hello,
-  },
+  name: 'BaseButton',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      counter:0,
     }
   }
 }

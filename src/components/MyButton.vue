@@ -1,23 +1,13 @@
 <template>
-  <div class="hello">
-    <MyButton />
-    <BaseButton />
-    <Hello />
-  </div>
+    <button @click="counter++">click me {{counter}} times</button>
 </template>
 
 <script>
-import MyButton from "./MyButton";
-import Hello from './Hello';
 export default {
-  name: 'HelloWorld',
-  components: {
-    MyButton,
-    Hello,
-  },
+  name: 'MyButton',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      counter:0,
     }
   }
 }
