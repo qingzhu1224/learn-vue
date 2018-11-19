@@ -1,23 +1,21 @@
 <template>
-  <div class="hello">
-    <MyButton />
-    <BaseButton />
-    <Hello />
-  </div>
+    <input v-model="text" @keyup="this.keyupEvent"/>
 </template>
 
 <script>
-import MyButton from "./MyButton";
-import Hello from './Hello';
 export default {
-  name: 'HelloWorld',
-  components: {
-    MyButton,
-    Hello,
-  },
+  name: 'MyInput',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      counter:0,
+      text: '',
+    }
+  },
+  methods: {
+    keyupEvent: function(e){
+        const { value } = e.target;
+        console.log(value);
+        this.$emit('listenerChildChange', value);
     }
   }
 }

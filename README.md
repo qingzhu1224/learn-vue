@@ -24,3 +24,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ### vue ####
 
 - 全局注册组件 
+
+- 父子之间的通信

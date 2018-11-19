@@ -1,20 +1,23 @@
 <template>
-    <input v-model="text" @keyup="this.change"/>
+  <div class="hello">
+    <MyButton />
+    <BaseButton />
+    <Hello title="42"/>
+  </div>
 </template>
 
 <script>
+import MyButton from "./MyButton";
+import Hello from './Hello';
 export default {
-  name: 'BaseInput',
+  name: 'Container',
+  components: {
+    MyButton,
+    Hello,
+  },
   data () {
     return {
-      counter:0,
-      text: '',
-    }
-  },
-  methods: {
-    change: function(e){
-        console.log(e.target.value)
-        this.$emit('inputChage', e.target.value)
+      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
