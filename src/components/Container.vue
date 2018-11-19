@@ -5,7 +5,7 @@
     <Hello title="42"/>
     <MySlot>
     </MySlot>
-    <TodoList>
+    <TodoList ref="todolist">
       <template slot-scope="{ todo }">
         <span v-if="todo.isComplete">✓</span>
         {{ todo.text }}
@@ -31,7 +31,10 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  mounted() {
+    console.log(this.$refs.todolist, 'ref');
+  },
 }
 </script>
 

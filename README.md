@@ -28,3 +28,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - 父子之间的通信
 
 - 插槽/具名插槽/作用域插槽
+
+- ref
