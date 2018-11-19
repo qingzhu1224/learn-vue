@@ -3,17 +3,21 @@
     <MyButton />
     <BaseButton />
     <Hello title="42"/>
+    <MySlot>
+    </MySlot>
   </div>
 </template>
 
 <script>
 import MyButton from "./MyButton";
 import Hello from './Hello';
+import MySlot from './Slot';
 export default {
   name: 'Container',
   components: {
     MyButton,
     Hello,
+    MySlot,
   },
   data () {
     return {
@@ -38,5 +42,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.hello{
+  font-size: 24px;
+  border: 1px solid red;
 }
 </style>

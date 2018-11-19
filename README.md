@@ -26,3 +26,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - 全局注册组件 
 
 - 父子之间的通信
+
+- 插槽
