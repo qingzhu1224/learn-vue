@@ -23,7 +23,7 @@ export default {
     }
   },
   mounted() {
-      console.log(this.$root, 'root')
+    console.log(this.$root, 'root')
   },
 }
 </script>

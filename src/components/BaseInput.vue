@@ -15,6 +15,7 @@ export default {
     change: function(e){
         console.log(e.target.value)
         this.$emit('inputChage', e.target.value)
+
     }
   }
 }

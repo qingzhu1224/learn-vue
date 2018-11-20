@@ -13,9 +13,9 @@ export default {
   },
   methods: {
     keyupEvent: function(e){
-        const { value } = e.target;
-        console.log(value);
-        this.$emit('listenerChildChange', value);
+      const { value } = e.target;
+      console.log(value);
+      this.$emit('listenerChildChange', value);
     }
   }
 }
