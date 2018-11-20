@@ -22,5 +22,8 @@ export default {
         todos: [{id:'1', text: 'yqz', isComplete: true}, {id:'2', text: 'fsl', isComplete: false}]
     }
   },
+  mounted() {
+      console.log(this.$root, 'root')
+  },
 }
 </script>
