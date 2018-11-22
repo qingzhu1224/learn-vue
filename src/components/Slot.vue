@@ -1,7 +1,10 @@
 <template>
   <div>
     hello, yqz
-    <slot>我是默认的啊</slot>
+    <slot>我是默认的啊
+    
+    
+    </slot>
   </div>
 </template>
 

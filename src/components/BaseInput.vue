@@ -7,7 +7,7 @@ export default {
   name: 'BaseInput',
   data () {
     return {
-      counter:0,
+counter:0,
       text: '',
     }
   },

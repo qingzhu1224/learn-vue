@@ -8,7 +8,6 @@
     <MySlot>
       <h1>我是个好孩纸</h1>
     </MySlot>
-
   </div>
 </template>
 
